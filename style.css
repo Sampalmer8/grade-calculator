@@ -1,1 +1,33 @@
 /* CSS Style Sheet */
+body {
+    background-color: white;
+    margin: auto;
+    width: 600px;
+    margin-bottom: 100px;
+    padding: 50px 100px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.inputs {
+    font-size: 20px;
+}
+
+button {
+    background-color: yellow;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    padding:5px 10px;
+    border-radius: 15px;
+    margin-left: 20px;
+    font-size: 15px;
+}
+
+button:hover {
+    background-color: rgb(255, 255, 126);
+    color: black;
+    cursor: pointer;
+}
+
+background {
+    background-color: white;
+}
