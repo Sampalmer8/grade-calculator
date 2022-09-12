@@ -32,4 +32,6 @@ background {
     background-color: white;
 }
 
-in
+input {
+    width: 40px;
+}
