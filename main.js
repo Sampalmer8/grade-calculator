@@ -1,14 +1,22 @@
 // JavaScript Code
 
-// Input
-let grade1 = +prompt("Enter your Client-Side Scripting 1 grade:");
-let grade2 = +prompt("Enter your Structured Programming 1 grade:");
-let grade3 = +prompt("Enter your Structured Programming 2 grade:");
-let grade4 = +prompt("Enter your Client-Side Scripting 2 grade:");
-let grade5 = +prompt("Enter your Project A grade:");
 
-// Process
-let finalGrade = (grade1 + grade2 + grade3 + grade4 + grade5)/5;
+// Event Listener on the Button
+document.getElementById("btn").addEventListener("click", btnClicked);
 
-// Output
-alert(`Your final grade is ${finalGrade}%`);
+
+function btnClicked() {
+    // Input
+    let grade1 = +document.getElementById("clientSideScripting1").value;
+    let grade2 = +document.getElementById("structedProgramming1").value;
+    let grade3 = +document.getElementById("structuredProgramming2").value;
+    let grade4 = +document.getElementById("clientSideScripting2").value;
+    let grade5 = +document.getElementById("projectA").value;
+
+    // Process
+    let finalGrade = (grade1 + grade2 + grade3 + grade4 + grade5)/5;
+
+    // Output
+
+    document.getElementById("output").innerHTML = finalGrade.toFixed(0);
+}
